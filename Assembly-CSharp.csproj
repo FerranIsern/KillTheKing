@@ -62,7 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\1 - Scripts\BallLauncherScript.cs" />
+    <Compile Include="Assets\1 - Scripts\CameraFocusController.cs" />
     <Compile Include="Assets\1 - Scripts\GameController.cs" />
+    <Compile Include="Assets\1 - Scripts\King.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
