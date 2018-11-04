@@ -83,6 +83,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
         var rigidBodies = GetComponentsInChildren<Rigidbody>(true);
 
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().detected = true;
+
         // Enable rendering:
         foreach (var component in rendererComponents)
             component.enabled = true;
@@ -106,6 +108,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
         var rigidBodies = GetComponentsInChildren<Rigidbody>(true);
+
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().detected = false;
 
         // Disable rendering:
         foreach (var component in rendererComponents)
